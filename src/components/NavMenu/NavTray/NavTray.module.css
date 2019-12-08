@@ -1,0 +1,49 @@
+.NavTray {
+    transition: all .5s;
+    /* padding: 1.5rem 2.5rem; */
+    background-color: transparent;
+    border: solid medium rgba(245,255,250,1);
+    border-top: none;
+    display: flex;
+    flex-flow: column;
+    max-width: 75vw;
+    border-radius: 3px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50;
+}
+
+.NavTray a, .NavTray a.active {
+    text-decoration: none;
+}
+
+.NavTray a {
+    margin: 0 5px;
+}
+
+.NavTray a.active {
+    color: orange;
+}
+
+.closed {
+    transform: translateY(-20rem);
+    opacity: 0;
+}
+
+@media (min-width: 500px) {
+    .NavTray {
+        /* padding: 1rem 2rem; */
+        margin-right: 5rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .NavTray {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        /* padding: .25rem .5rem; */
+    /* margin-right: 30vw; */
+    }
+}

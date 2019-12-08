@@ -1,0 +1,61 @@
+.NavButton {
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 25vw;
+}
+
+
+.NavButton div {
+    background-color: rgba(100, 148, 237, 0.897);
+    transition: all 1s;
+    width: 4rem;
+    height: .8rem;
+    margin: .5rem 1.5rem .5rem 0;
+}
+
+.NavButton .middle {
+    transition: all .2s;
+}
+
+.NavButton .top {
+    margin-top: 1.5rem;
+}
+
+.xButton {
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 25vw;
+}
+
+.xButton > div {
+    background-color: red;
+}
+
+.xButton div {
+    transition: all .7s;
+    width: 5rem;
+    height: .8rem;
+    margin: .5rem 1.5rem .5rem 0;
+}
+
+.xButton .top {
+    margin-top: 1.5rem;
+    transform: rotate(45deg);
+    transform-origin: 0% 100%;
+}
+
+.xButton .middle {
+    transform: translateX(10rem);
+}
+
+.xButton .bottom {
+    transform: rotate(-45deg);
+    transform-origin: 0% 100%;
+}
+

@@ -1,5 +1,35 @@
 .header {
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
-    background-color: cornflowerblue;
+  display: flex;
+  justify-content: space-around;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  background-color: #000000;
+}
+
+/* Pushes logo left, buttons to the right */
+.header div:first-child {
+  font-size: 2.5rem;
+  margin-right: auto;
+  padding: 2rem;
+  color: #ffffff;
+}
+
+/* C2A styling */
+.callToAction {
+  /* height: 150%; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  padding: 1.2rem 2.4rem;
+  margin: auto 3rem auto auto;
+  border-radius: 5px;
+  background-color: #ffb43d;
+}
+/* Nav item styling */
+.header a:not(:first-child) {
+  font-size: 1.4rem;
+  padding: 1rem;
+  margin: 1.5rem 3rem;
+  color: #ececec;
+  text-decoration: none;
 }
