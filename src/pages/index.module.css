@@ -1,0 +1,41 @@
+.mobileGrid {
+  grid-template-areas:
+    "a b"
+    "c d";
+  width: 100vw;
+  grid-row: 2 / -1;
+  grid-column: 1 / -1;
+}
+
+.gallery {
+  display: flex;
+  flex-flow: column wrap;
+  /* height: 100%; */
+  grid-row: 2 / 9;
+  grid-column: 1 / -1;
+}
+
+.mobileFooter {
+  grid-row: 9 / 11;
+  grid-column: 1 / -1;
+}
+.photo {
+  display: inline-block;
+  width: 50vw;
+}
+
+/* .imageA {
+  grid-area: "a";
+}
+
+.imageB {
+  grid-area: "b";
+}
+
+.imageC {
+  grid-area: "c";
+}
+
+.imageD {
+  grid-area: "d";
+} */

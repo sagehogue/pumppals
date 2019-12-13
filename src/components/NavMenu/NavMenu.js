@@ -5,6 +5,7 @@ import NavButton from './NavButton/NavButton';
 import NavTray from './NavTray/NavTray';
 import TrayItem from './NavTray/TrayItem/TrayItem';
 import Backdrop from '../Backdrop/Backdrop';
+import Logo from '../logo/logo';
 
 import classes from './NavMenu.module.css';
 
@@ -58,26 +59,27 @@ class NavMenu extends Component {
 
         return (
             <div className={classes.NavMenu}>
+                <Logo />
                 <NavButton
                     menuClosed={this.state.menuIsClosed}
                     toggleMenuHandler={this.toggleMenu} />
                 <NavTray menuClosed={this.state.menuIsClosed}>
-                    <AniLink exact to="/">
+                    <AniLink swipe to="/">
                         <TrayItem active={this.state.activePage == this.path.home? true : undefined} clickHandler={this.handlePageChange}>
                             Home
                         </TrayItem>
                     </AniLink>
-                    <AniLink to={this.path.about} activeClassName={classes.active}>
+                    <AniLink to={this.path.about} swipe>
                         <TrayItem active={this.state.activePage == this.path.about? true : undefined} clickHandler={this.handlePageChange}>
                             About Us
                         </TrayItem>
                     </AniLink>
-                    <AniLink to={this.path.rates} activeClassName={classes.active}>
+                    <AniLink to={this.path.rates} swipe>
                         <TrayItem active={this.state.activePage == this.path.rates? true : undefined} clickHandler={this.handlePageChange}>
                             Rates
                         </TrayItem>
                     </AniLink>
-                    <AniLink to={this.path.details} activeClassName={classes.active}>
+                    <AniLink to={this.path.details} swipe>
                         <TrayItem active={this.state.activePage == this.path.details? true : undefined} clickHandler={this.handlePageChange}>
                             Facility Details
                         </TrayItem>

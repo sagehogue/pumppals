@@ -2,23 +2,34 @@
     transition: all .5s;
     /* padding: 1.5rem 2.5rem; */
     background-color: transparent;
-    border: solid medium rgba(245,255,250,1);
-    border-top: none;
+    /* border: solid medium rgba(245,255,250,1); */
+    /* border-top: none; */
     display: flex;
     flex-flow: column;
-    max-width: 75vw;
+    /* max-width: 75vw; */
     border-radius: 3px;
+    border: 1.5px solid rgba(245, 255, 250, 1);
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
     justify-content: space-between;
     align-items: center;
     z-index: 50;
+    min-height: 15vh;
+    background-color: rgba(245, 255, 250, 1);
 }
 
 .NavTray a, .NavTray a.active {
     text-decoration: none;
 }
 
-.NavTray a {
-    margin: 0 5px;
+.NavTray a div {
+    padding: 1rem 0;
+}
+
+.NavTray a:first-of-type div {
+    background-color: black;
+    color: rgba(245, 255, 250, 1)
 }
 
 .NavTray a.active {

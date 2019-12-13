@@ -6,22 +6,25 @@
 .TrayItem {
     font-size: var(--tray-item-font-size);
     font-weight: var(--tray-item-font-weight);
-    border-radius: 1rem;
-    padding: .5rem;
+    /* border-radius: 1rem; */
+    /* padding: .5rem; */
     color: #000000;
-    background-color: rgba(245, 255, 250, 1);
-    border: solid medium rgba(245, 255, 250, 1);
-    margin: .25rem 0 .25rem 0;
+    /* border: solid medium rgba(245, 255, 250, 1); */
+    /* margin: .5rem 0 .5rem 0; */
     transition: all .4s;
     text-decoration: none;
     flex-shrink: 1;
+    min-width: 7.5rem;
+    text-align: center;
+    
 }
-
+/*
 .TrayItem:hover {
     transform: translateY(-5px);
-    /* box-shadow: 1px 3px 1px 1px black; */
+     box-shadow: 1px 3px 1px 1px black; 
     background-color: rgba(119, 136, 153, 0.781);
 }
+*/
 
 /* .TrayItem:hover:not(.active) {
     
